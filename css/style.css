@@ -26,6 +26,7 @@
 
 body {
   position: relative;
+  padding-top: 40px;
   background-color: #fff;
   background-repeat: repeat-x;
   background-position: 0 40px;
@@ -51,36 +52,52 @@ body {
 }
 
 /* =============================================================================
-   page
+   page, post
    ========================================================================== */
 
+.post{
+  font-size: 1.2em;
+}
+
 .page{
-  margin: 1.0em 0em;
-  padding-top: 25px;
+  font-size: 16px;
+}
+
+.page, .post{
   line-height: 1.5em;
-  font-family: 'Open Sans',"Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-family: 'Open Sans',"Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
 }
 
-.page p{
-  margin: 1.0em 0em;
+.page .more {
+  text-pull: right;
 }
 
-.page .panel-heading {
-  background-color: #eee;
+.post .date {
+  margin-bottom:20px;
   font-weight:bold;
 }
 
-.page .panel-collapse .panel-body {
-  padding: 9px 15px;
-  background-color: #F5F5D5;
-  font-size: 16px;
-  line-height: 24px;
+.mypage {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
 }
 
-.note {
-  position: relative;
-  margin-top: -20px;
+/* =============================================================================
+   navbar
+   ========================================================================== */
+
+.navbar-brand {
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
 }
+
+.navbar-brand:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+}
+
 
 /* =============================================================================
    pagination
@@ -106,6 +123,78 @@ li i {
 
 .listing-item {
   line-height: 24px;
+}
+
+/* =============================================================================
+   widget and tag box
+   ========================================================================== */
+
+.meta-widget {
+  margin: 10px 0;
+}
+
+.meta-widget a{
+  color:#555;
+}
+
+.tag_box {
+  margin:0;
+  overflow:hidden;
+}
+.tag_box li {
+  line-height:28px;
+}
+.tag_box li i {
+  opacity:0.9;
+}
+.tag_box.inline li {
+  float:left;
+}
+.tag_box a {
+  padding: 2px 6px;
+  margin: 2px;
+  background: #e5e5e5;
+  color:#555;
+  border-radius: 3px;
+  text-decoration:none;
+  border:1px dashed #bbb;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a:hover {
+  background-color:#397bdd;
+  color:#FFF;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+.widget {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+.tagcloud .entry{
+  width: 100%;  
+}
+
+.archive-title:before {
+  font-family: FontAwesome;
+  content: '\f187  ';
+}
+
+.archive-title-tag:before {
+  font-family: FontAwesome;
+  content: '\f02c  ';
+}
+
+.archive-title-category:before {
+  font-family: FontAwesome;
+  content: '\f07b  ';
 }
 
 /* =============================================================================
@@ -161,11 +250,10 @@ blockquote {
   border-left:5px solid #cccccc;
   font-size: 1em;
   background-color: #fff;
-  padding: 0px 20px;
 }
 
 blockquote p, blockquote ol, blockquote ul, blockquote li, .slogan{
-  font-family: 'Open Sans',"Helvetica Neue", '楷体', 'STKaiti', "Kai", "kaiti", Helvetica, "Segoe UI", Ubuntu, "Hiragino Sans GB";
+  font-family: 'Open Sans',"Helvetica Neue", Helvetica, "Segoe UI", Ubuntu, "Hiragino Sans GB", '楷体', 'STKaiti';
 }
 
 /* =============================================================================
@@ -178,6 +266,27 @@ img {
   display: block;
   width: auto;
   height: auto;
+}
+
+/* =============================================================================
+   slogan
+   ========================================================================== */
+
+.slogan .icon-heart{
+  opacity: 0.5;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.slogan .icon-heart:hover{
+  opacity: 1;
+}
+
+.slogan{
+  font-size: 1.2em;
+  color: #888;  
+  display:block;
+  margin-bottom: 1em;
 }
 
 /* =============================================================================
@@ -216,25 +325,6 @@ header h1{
   font-weight:normal;
   line-height:1.2em;
   margin-bottom:0.6667em;
-
-}
-.page-header h1 span.split{
-  margin-left: 10px;
-  margin-right: 10px;
-  border-right: solid #333 2px;
-}
-
-.page-header h1 span.title{
-  font-weight:normal;
-  font-family: "Droid Serif", "Kai", "KaiTi";
-}
-
-.page-header h1 span.date{
-  display:inline;
-  position: absolute;
-  font-size: 0.7em;
-  color: #555;
-  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 h1{
@@ -252,30 +342,17 @@ h1,h2,h3,h4,h5,h6{
 h2{
   margin: 0.83em 0;
   color: green;
-  border-bottom: 2px #ccc solid;
   padding-top: 40px;
-  margin-top: -45px;
+  margin-top: -25px;
 }
 
 h3 {
-  border-bottom: 1.5px solid #dcdce9;
-  margin-top: -5px;
   color: #9C4C17;
 }
 
 h4 {
   color: #B94A48;
 }
-
-h2,section h1{font-size:1.5em}
-
-h3,section h2,section section h1{font-size:1.3em}
-
-h4,section h3,section section h2,section section section h1{font-size:1em}
-
-h5,section h4,section section h3{font-size:.9em}
-
-h6,section h5,section section h4,section section section h3{font-size:.8em}
 
 .page-header {
   -webkit-background-clip: border-box;
@@ -287,28 +364,107 @@ h6,section h5,section section h4,section section section h3{font-size:.8em}
   background: #333;
   background: -moz-linear-gradient(top, #222, #000 50%);
   background: -webkit-gradient(linear, 0 0, 0 50%, from(#222), to(#000));
-  color: #bbbbbb;
+  color: #e9e9e9;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;  
 }
 
-h2,h3{
-  margin: 0.5em 0px;
-}
-.page-header .brand{
-  color: #bbbbbb;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-          transition: all .2s linear;
+/* =============================================================================
+   entry
+   ========================================================================== */
+
+.page .entry{
+  padding-top: 10px 0;
 }
 
-.page-header .brand:hover {
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+.page .entry h2{
+  display:block; overflow: hidden; width: 0; height: 0;
+  margin: -20px 0;
+}
+
+.page .entry h3{
+  display:block; overflow: hidden; width: 0; height: 0;
+}
+
+.page .entry .col-md-8{
+  margin: 10px 0;
+}
+
+.page h3.title {
+  position:relative;
+  padding: 2px 5px 5px 5px;
+  border-top:3px solid #ccc;
+  font-size: 1.9em;
+  font-weight: normal;
+  font-family: 'PT Sans Narrow', '雅黑', '文泉驿微米黑', '黑体', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.page h3.title a {
+  color: black;
+}
+
+.page h3.title span.date {
+  position:absolute;
+  right:5px;
+  font-size:0.7em;
+  color: #777;
+}
+
+
+/* =============================================================================
+   Archives list
+   ========================================================================== */
+
+.archive-ul > .caret {
+  vertical-align: 7px;
+  margin-left: 5px;
+  opacity: 0.3;
+}
+
+.archive-ul:hover > .caret {
+  opacity: 1;
+}
+
+/* =============================================================================
+   ToC
+   ========================================================================== */
+
+.toc{
+  font-size:10pt;
+  width:auto;
+  padding:10px;
+  background: #eee;
+  border:solid 1px #ccc;
+}
+ 
+.toc .toc-title{
+  font-weight:bold;
+  font-size:125%
+}
+
+.toc-article{
+  list-style:circle;
+  line-height: 1em;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+}
+
+.toc-article li{
+  margin-left:5px !important;
+  padding:0 !important  
+}
+
+.toc-article ol{
+  list-style:square;
+  padding: 5px 20px;
+}
+
+.toc-article ol ol{
+  list-style:circle;
+  padding: 5px 20px;
 }
 
 /* =============================================================================
