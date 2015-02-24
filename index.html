@@ -103,6 +103,119 @@
 	
 	<!-- display as entry -->
 		<h3 class="title">
+			<a href="/2015/02/24/本博之诞生/" >本博客之诞生</a>
+			<span class="date"> 2月 24 2015 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <pre><code>    我觉得作为一个IT工作者，需要有个blog，来提升自己的X格，所以今天就折腾这个事情来了，以下简单记录下这一过程。
+</code></pre><ul>
+<li>创建一个Github账号<pre><code>  登录 [<span class="link_label">Github</span>](<span class="link_url">https://github.com/</span>) 进行账号注册，注册完毕后创建一个 repository，命名为username.github.io，比如，我自己的用户名是sibeta，则命名为sibeta.github.io。
+</code></pre></li>
+<li>安装hexo<pre><code>  安装 [<span class="link_label">hexo</span>](<span class="link_url">http://hexo.io/</span>) 前需要先安装 [<span class="link_label">node</span>](<span class="link_url">http://hexo.io/</span>),安装过程具体参考官网。安装完毕后，创建一个目录，我创建为blog。
+</code></pre></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mkdir blog</div></pre></td></tr></table></figure>
+
+<p>创建完毕后，进入该目录，将username.github.io项目从你的github上clone下来。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ git clone https://github.com/sibeta/sibeta.github.io.git</div></pre></td></tr></table></figure>
+
+<p>clone下来后，进入username.github.io目录，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+
+<p>完成后，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>访问localhost:4000看默认效果</p>
+<ul>
+<li>挑选hexo主题<pre><code>  本人挑的主题是 [<span class="link_label">hexo-theme-freemind</span>](<span class="link_url">https://github.com/wzpan/hexo-theme-freemind</span>)，进入username.github.io/themes目录，执行：
+</code></pre></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/wzpan/hexo-theme-freemind.git</div></pre></td></tr></table></figure>
+
+<p>将该主题下载下来，下载完毕后，修改username.github.io目录下的_config.yml文件的theme属性为hexo-theme-freemind<br>重启，即可看效果。</p>
+<ul>
+<li>发布到Github<pre><code>  同样是修改username.github.<span class="built_in">io</span>目录下的_config.yml文件，修改里面的deploy属性，如下：
+</code></pre></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: github</div><div class="line">    repository: https://github.com/sibeta/sibeta.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure>
+
+<p>修改完毕后，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+
+<p>完成后，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+
+<p>完成后，访问username.github.io即可看效果。</p>
+<ul>
+<li>发布文章<pre><code>  详情请参考 [<span class="link_label">hexo发布文章</span>](<span class="link_url">http://hexo.io/docs/writing.html</span>)
+</code></pre></li>
+</ul>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2015/02/24/本博之诞生/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
+			<a href="/2015/02/24/hello-world/" >Hello World</a>
+			<span class="date"> 2月 24 2015 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2015/02/24/hello-world/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
 			<a href="/2015/02/24/my-new-post/" >测试</a>
 			<span class="date"> 2月 24 2015 </span>
 		</h3>
@@ -170,50 +283,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->
-		<h3 class="title">
-			<a href="/2015/02/24/hello-world/" >Hello World</a>
-			<span class="date"> 2月 24 2015 </span>
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-	
-	</div>
-	
-  
-</div>
-	<a type="button" href="/2015/02/24/hello-world/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-		
 
 		</div>
 
@@ -256,15 +325,19 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2015/02/24/本博之诞生/" ><i class="fa fa-file-o"></i>本博客之诞生</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/24/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
+      </li>
+    
+      <li>
         <a href="/2015/02/24/my-new-post/" ><i class="fa fa-file-o"></i>测试</a>
       </li>
     
       <li>
         <a href="/2015/02/24/test/" ><i class="fa fa-file-o"></i>Hello World</a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/24/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
       </li>
     
   </ul>
