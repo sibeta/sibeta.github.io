@@ -8,7 +8,7 @@
   
   <meta name="description" content="我觉得作为一个IT工作者，需要有个blog，来提升自己的X格，所以今天就折腾这个事情来了，以下简单记录下这一过程。
 
-创建一个Github账号  登录 [Github](https://github.com/) 进行账号注册，注册完毕后创建一个 repository，命名为username.gith">
+创建一个Github账号登录 Github 进行账号注册，注册完毕后创建一个 repository，命名为username.github.io，比如，我自己的用户名是sibeta，则">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -105,12 +105,10 @@
 
 	<!-- content -->
 	<div class="mypage">		
-	    <pre><code>    我觉得作为一个IT工作者，需要有个blog，来提升自己的X格，所以今天就折腾这个事情来了，以下简单记录下这一过程。
-</code></pre><ul>
-<li>创建一个Github账号<pre><code>  登录 [<span class="link_label">Github</span>](<span class="link_url">https://github.com/</span>) 进行账号注册，注册完毕后创建一个 repository，命名为username.github.io，比如，我自己的用户名是sibeta，则命名为sibeta.github.io。
-</code></pre></li>
-<li>安装hexo<pre><code>  安装 [<span class="link_label">hexo</span>](<span class="link_url">http://hexo.io/</span>) 前需要先安装 [<span class="link_label">node</span>](<span class="link_url">http://hexo.io/</span>),安装过程具体参考官网。安装完毕后，创建一个目录，我创建为blog。
-</code></pre></li>
+	    <p>我觉得作为一个IT工作者，需要有个blog，来提升自己的X格，所以今天就折腾这个事情来了，以下简单记录下这一过程。</p>
+<ul>
+<li>创建一个Github账号<br>登录 <a href="https://github.com/" target="_blank" rel="external">Github</a> 进行账号注册，注册完毕后创建一个 repository，命名为username.github.io，比如，我自己的用户名是sibeta，则命名为sibeta.github.io。</li>
+<li>安装hexo<br>安装 <a href="http://hexo.io/" target="_blank" rel="external">hexo</a> 前需要先安装 <a href="http://hexo.io/" target="_blank" rel="external">node</a>,安装过程具体参考官网。安装完毕后，创建一个目录，我创建为blog。</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mkdir blog</div></pre></td></tr></table></figure>
 
@@ -125,15 +123,13 @@
 
 <p>访问localhost:4000看默认效果</p>
 <ul>
-<li>挑选hexo主题<pre><code>  本人挑的主题是 [<span class="link_label">hexo-theme-freemind</span>](<span class="link_url">https://github.com/wzpan/hexo-theme-freemind</span>)，进入username.github.io/themes目录，执行：
-</code></pre></li>
+<li>挑选hexo主题<br>本人挑的主题是 <a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">hexo-theme-freemind</a>，进入username.github.io/themes目录，执行：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/wzpan/hexo-theme-freemind.git</div></pre></td></tr></table></figure>
 
 <p>将该主题下载下来，下载完毕后，修改username.github.io目录下的_config.yml文件的theme属性为hexo-theme-freemind<br>重启，即可看效果。</p>
 <ul>
-<li>发布到Github<pre><code>  同样是修改username.github.<span class="built_in">io</span>目录下的_config.yml文件，修改里面的deploy属性，如下：
-</code></pre></li>
+<li>发布到Github<br>同样是修改username.github.io目录下的_config.yml文件，修改里面的deploy属性，如下：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: github</div><div class="line">    repository: https://github.com/sibeta/sibeta.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure>
 
@@ -145,8 +141,7 @@
 
 <p>完成后，访问username.github.io即可看效果。</p>
 <ul>
-<li>发布文章<pre><code>  详情请参考 [<span class="link_label">hexo发布文章</span>](<span class="link_url">http://hexo.io/docs/writing.html</span>)
-</code></pre></li>
+<li>发布文章<br>详情请参考 <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">hexo发布文章</a></li>
 </ul>
 	  
 	</div>
