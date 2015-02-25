@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>学习PHP | Home</title>
+  <meta name="author" content="sibeta">
+  
+  <meta name="description" content="定义常量
+参考如下代码：
+12345678&amp;lt;?php    $p = &quot;PII&quot;;    define(&quot;PI&quot;, 3.14);    define($p, 3.14);    echo PI;    echo &quot;&amp;lt;br /&amp;gt;&quot;;    echo PII;?&amp;gt;
+
+认识系统常量">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="学习PHP"/>
+  <meta property="og:site_name" content="Home"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Home</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="所有文章归档">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="所有文章分类">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="关于我">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> 学习PHP</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <h3 id="定义常量">定义常量</h3>
+<p>参考如下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    <span class="variable">$p</span> = <span class="string">"PII"</span>;</div><div class="line">    define(<span class="string">"PI"</span>, <span class="number">3.14</span>);</div><div class="line">    define(<span class="variable">$p</span>, <span class="number">3.14</span>);</div><div class="line">    <span class="built_in">echo</span> PI;</div><div class="line">    <span class="built_in">echo</span> <span class="string">"&lt;br /&gt;"</span>;</div><div class="line">    <span class="built_in">echo</span> PII;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<h3 id="认识系统常量">认识系统常量</h3>
+<ul>
+<li>_<em>FILE_</em>:php程序文件名。它可以帮助我们获取当前文件在服务器的物理位置。</li>
+<li>_<em>LINE_</em>:PHP程序文件行数。它可以告诉我们，当前代码在第几行。</li>
+<li>PHP_VERSON:当前解析器的版本号。它可以告诉我们当前PHP解析器的版本号，我们可以提前知道我们的PHP代码是否可被该PHP解析器解析。</li>
+<li>PHP_OS：执行当前PHP版本的操作系统名称。它可以告诉我们服务器所用的操作系统名称，我们可以根据该操作系统优化我们的代码</li>
+</ul>
+<p>使用可参考如下代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    <span class="built_in">echo</span> __FILE__;</div><div class="line">    <span class="built_in">echo</span> <span class="string">"&lt;br /&gt;"</span>;</div><div class="line">    <span class="built_in">echo</span> __FILE__;</div><div class="line">    <span class="built_in">echo</span> <span class="string">"&lt;br /&gt;"</span>;</div><div class="line">    <span class="built_in">echo</span> PHP_VERSON;</div><div class="line">    <span class="built_in">echo</span> <span class="string">"&lt;br /&gt;"</span>;</div><div class="line">    <span class="built_in">echo</span> PHP_OS;</div><div class="line">    <span class="built_in">echo</span> <span class="string">"&lt;br /&gt;"</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<h3 id="常量取值">常量取值</h3>
+<ul>
+<li>使用常量名直接获取值</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    define(<span class="string">"PI"</span>, <span class="number">3.14</span>);</div><div class="line">    <span class="variable">$r</span> = <span class="number">1</span>;</div><div class="line">    <span class="variable">$area</span> = PI * <span class="variable">$r</span> * <span class="variable">$r</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<ul>
+<li>使用constant()函数</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    define(<span class="string">"PI"</span>, <span class="number">3.14</span>);</div><div class="line">    <span class="variable">$r</span> = <span class="number">1</span>;</div><div class="line">    <span class="variable">$area</span> = constant(<span class="string">"PI"</span>) * <span class="variable">$r</span> * <span class="variable">$r</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<h3 id="如何判定常量是否被定义">如何判定常量是否被定义</h3>
+<p>defined()函数可以帮助我们判断一个常量是否已经定义，其语法格式为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bool defined(string constants_name)</div></pre></td></tr></table></figure>
+
+<p>示例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    define(<span class="string">"PI1"</span>, <span class="number">3.14</span>);</div><div class="line">    <span class="variable">$p</span> = <span class="string">"PI1"</span>;</div><div class="line">    <span class="variable">$is1</span> = defined(<span class="variable">$p</span>);</div><div class="line">    <span class="variable">$is2</span> = defined(<span class="string">"PI2"</span>);</div><div class="line">    </div><div class="line">    var_dump(<span class="variable">$is1</span>);</div><div class="line">    var_dump(<span class="variable">$is2</span>);</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<p>输出</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">bool(<span class="literal">true</span>)</div><div class="line">bool(<span class="literal">false</span>)</div></pre></td></tr></table></figure>
+
+<h3 id="PHP中的字符串连接运算符">PHP中的字符串连接运算符</h3>
+<p>字符串连接运算符是为了将两个字符串进行连接，PHP中提供的字符串连接运算符有：<br>（1）连接运算符(“.”)：它返回将右参数附加到左参数后面所得的字符串。<br>（2）连接赋值运算符(“.=”)：它将右边参数附加到左边的参数后。<br>示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">   <span class="variable">$a</span> = <span class="string">"张先生"</span>;</div><div class="line">   <span class="variable">$tip</span> = <span class="variable">$a</span>.<span class="string">",欢迎您来"</span>;</div><div class="line">   </div><div class="line">   <span class="variable">$b</span> = <span class="string">"东边日出西边雨"</span>;</div><div class="line">   <span class="variable">$b</span> .= <span class="string">",道是无晴却有晴"</span>;</div><div class="line">   </div><div class="line">   <span class="variable">$c</span> = <span class="string">"东边日出西边雨"</span>;</div><div class="line">   <span class="variable">$c</span> = <span class="variable">$c</span>.<span class="string">",道是无晴却有晴"</span>;</div><div class="line">   </div><div class="line">   <span class="built_in">echo</span> <span class="variable">$tip</span>.<span class="string">"&lt;br /&gt;"</span>;</div><div class="line">   <span class="built_in">echo</span> <span class="variable">$b</span>.<span class="string">"&lt;br /&gt;"</span>;</div><div class="line">   <span class="built_in">echo</span> <span class="variable">$c</span>.<span class="string">"&lt;br /&gt;"</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">张先生，欢迎您来</div><div class="line">东边日出西边雨，道是无晴却有晴</div><div class="line">东边日出西边雨，道是无晴却有晴</div></pre></td></tr></table></figure>
+
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2015/02/25/learn-sublime-text/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2月 25 2015 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2015 sibeta
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+   </html>
