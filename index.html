@@ -195,6 +195,54 @@
 	
 	<!-- display as entry -->
 		<h3 class="title">
+			<a href="/2015/02/25/learn-jquery-plugin/" >jquery插件开发</a>
+			<span class="date"> 2月 25 2015 </span>
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+  
+	<div class="col-md-12">
+	  
+	
+	  <h3 id="类级别插件开发">类级别插件开发</h3>
+<ul>
+<li>直接给jquery添加全局函数</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">jQuery.myAlert = function(str) {</div><div class="line">    alert(str);</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<ul>
+<li>用extend()方法</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">jQuery.extend({</div><div class="line">    myAlert:function(str) {</div><div class="line">        alert(str);</div><div class="line">    },</div><div class="line">    myAlert2:<span class="function"><span class="title">function</span></span>() {</div><div class="line">        alert(<span class="number">2222</span>);</div><div class="line">    }</div><div class="line">});</div></pre></td></tr></table></figure>
+
+<ul>
+<li>使用命名空间</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jQuery.sibeta = {</div><div class="line">    myAlert:function(str) {</div><div class="line">        alert(str);</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p><a href="http://pan.baidu.com/s/1sjoJkdB" target="_blank" rel="external">实例下载</a></p>
+<h3 id="对象级别插件开发">对象级别插件开发</h3>
+<p>jquery官方提供的模板</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">;(function($) {</div><div class="line">    $.fn.plugin=function(options) {</div><div class="line">        var defaults = {</div><div class="line">            //各种参数， 各种属性</div><div class="line">        }</div><div class="line">        </div><div class="line">        var options = $.extend(defaults.options);</div><div class="line">        this.each(<span class="function"><span class="title">function</span></span>() {</div><div class="line">            //实现功能的代码</div><div class="line">        });</div><div class="line">    }</div><div class="line">})(jQuery);</div></pre></td></tr></table></figure>
+
+<p><a href="http://pan.baidu.com/s/1ntA6abZ" target="_blank" rel="external">实例下载</a></p>
+
+	
+	</div>
+	
+  
+</div>
+	<a type="button" href="/2015/02/25/learn-jquery-plugin/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+		<h3 class="title">
 			<a href="/2015/02/25/blog-birth/" >本博客之诞生</a>
 			<span class="date"> 2月 25 2015 </span>
 		</h3>
@@ -295,6 +343,10 @@
     
       <li>
         <a href="/2015/02/25/learn-sublime-text/" ><i class="fa fa-file-o"></i>sublime text编辑器使用</a>
+      </li>
+    
+      <li>
+        <a href="/2015/02/25/learn-jquery-plugin/" ><i class="fa fa-file-o"></i>jquery插件开发</a>
       </li>
     
       <li>
