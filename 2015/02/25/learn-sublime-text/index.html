@@ -6,6 +6,13 @@
   <title>Home</title>
   <meta name="author" content="sibeta">
   
+  <meta name="description" content="title:sublime text编辑器使用
+Go To Anything
+比如，在一个用sublime text打开的文件夹目录，找一个index.html的文件，使用快捷键
+1ctrl + p
+
+在弹出的输入框里输入index.html，就会列出所有的index.html假如知道更具体的ind">
+  
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -74,42 +81,28 @@
 
   <div class="container">
   	<div class="content">
-    	 <div class="page-header">
-  <h1>Home</h1>
-</div>
+    	 
 
-<div class="row page">
 
+	
+		<div class="page-header">		
+			<h1> </h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
 	
 	<div class="col-md-9">
 	
 
-		<div class="slogan">
-      <i class="fa fa-heart"></i>
-      Hello, World!
-</div>    
-
-		<div class="mypage">
-		
-		<!-- title and entry -->
-		
 			
-	
-	<!-- display as entry -->
-		<h3 class="title">
-			<a href="/2015/02/25/learn-sublime-text/" ></a>
-			<span class="date"> 2月 25 2015 </span>
-		</h3>
-	
 
-
-			<div class="entry">
-  <div class="row">
-  
-	<div class="col-md-12">
-	  
-	
-	  <h2 id="title:sublime_text编辑器使用">title:sublime text编辑器使用</h2>
+	<!-- content -->
+	<div class="mypage">		
+	    <h2 id="title:sublime_text编辑器使用">title:sublime text编辑器使用</h2>
 <h3 id="Go_To_Anything">Go To Anything</h3>
 <p>比如，在一个用sublime text打开的文件夹目录，找一个index.html的文件，使用快捷键</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctrl + p</div></pre></td></tr></table></figure>
@@ -182,158 +175,71 @@
 <p>光标跳到行末后，执行快捷键</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctrl +e</div></pre></td></tr></table></figure>
 
-
-	
-	</div>
-	
-  
-</div>
-	<a type="button" href="/2015/02/25/learn-sublime-text/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-		<h3 class="title">
-			<a href="/2015/02/25/blog-birth/" >本博客之诞生</a>
-			<span class="date"> 2月 25 2015 </span>
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-  
-	<div class="col-md-12">
 	  
-	
-	  <p>我觉得作为一个IT工作者，需要有个blog，来提升自己的X格，所以今天就折腾这个事情来了，以下简单记录下这一过程。</p>
-<h3 id="创建一个Github账号"><strong>创建一个Github账号</strong></h3>
-<p>登录 <a href="https://github.com/" target="_blank" rel="external">Github</a> 进行账号注册，注册完毕后创建一个 repository，命名为username.github.io，比如，我自己的用户名是sibeta，则命名为sibeta.github.io。</p>
-<h3 id="安装hexo"><strong>安装hexo</strong></h3>
-<p>安装 <a href="http://hexo.io/" target="_blank" rel="external">hexo</a> 前需要先安装 <a href="http://hexo.io/" target="_blank" rel="external">node</a>,安装过程具体参考官网。安装完毕后，创建一个目录，我创建为blog。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mkdir blog</div></pre></td></tr></table></figure>
-
-<p>创建完毕后，进入该目录，将username.github.io项目从你的github上clone下来。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ git clone https://github.com/sibeta/sibeta.github.io.git</div></pre></td></tr></table></figure>
-
-<p>clone下来后，进入username.github.io目录，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-
-<p>完成后，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>访问localhost:4000看默认效果</p>
-<h3 id="挑选hexo主题"><strong>挑选hexo主题</strong></h3>
-<p>本人挑的主题是 <a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">hexo-theme-freemind</a>，进入username.github.io/themes目录，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/wzpan/hexo-theme-freemind.git</div></pre></td></tr></table></figure>
-
-<p>将该主题下载下来，下载完毕后，修改username.github.io目录下的_config.yml文件的theme属性为hexo-theme-freemind<br>重启，即可看效果。</p>
-<h3 id="发布到Github"><strong>发布到Github</strong></h3>
-<p>同样是修改username.github.io目录下的_config.yml文件，修改里面的deploy属性，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: github</div><div class="line">    repository: https://github.com/sibeta/sibeta.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure>
-
-<p>修改完毕后，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
-
-<p>完成后，执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
-
-<p>完成后，访问username.github.io即可看效果。</p>
-<h3 id="发布文章"><strong>发布文章</strong></h3>
-<p>详情请参考 <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">hexo发布文章</a></p>
-
-	
 	</div>
-	
-  
-</div>
-	<a type="button" href="/2015/02/25/blog-birth/#more" class="btn btn-default more">阅读此文</a>
-</div>
 
-		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
+	<div>
+  	<center>
+	<div class="pagination">
 <ul class="pagination">
 	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2015/02/25/blog-birth/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
 </ul>
 </div>
 
-  		</center>
-		</div>
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
 
-		
-		
-	</div> <!-- col-md-9 -->
+  
+</section>
 
 	
-		<div class="col-md-3">
-	<div id="sidebar">
+	</div> <!-- col-md-9/col-md-12 -->
 	
-			<div class="form-group has-success has-feedback">
-  <form action="//google.com/search" method="get" accept-charset="utf-8" >
-    <input type="search" name="q" results="0" placeholder="搜索" class="form-control">
-    <input type="hidden" name="q" value="site:sibeta.info">	
-  </form>
-</div>
+	
+		<div class="col-md-3"> 
 
-		
-			
-		
-			
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2月 25 2015 
+	</div>
+	
 
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
+	<!-- categories -->
     
-      <li>
-        <a href="/2015/02/25/learn-sublime-text/" ><i class="fa fa-file-o"></i></a>
-      </li>
-    
-      <li>
-        <a href="/2015/02/25/blog-birth/" ><i class="fa fa-file-o"></i>本博客之诞生</a>
-      </li>
-    
-  </ul>
-</div>
 
+	<!-- tags -->
 		
-			
-<div class="widget">
-	<h4>链接</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/sibeta" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://eric.ec/" title="周良Blog" target="_blank"]);">周良</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://blog.star7th.com/" title="" target="_blank"]);">第七星辰</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://hahack.com/" title="" target="_blank"]);">wzpan</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://news.dbanotes.net/" title="" target="_blank"]);">Startup News</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.imooc.com/" title="" target="_blank"]);">慕课网</a></li>
-	
-	</ul>
-</div>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
 
 	
-	
-</div> <!-- row-fluid -->
+
+</div><!-- row -->
+
 	</div>
   </div>
   <div class="container-narrow">
