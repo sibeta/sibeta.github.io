@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>学习linux使用 | Home</title>
+  <meta name="author" content="sibeta">
+  
+  <meta name="description" content="Linux Guide for Developer
+
+清屏命令
+1ctrl + l 或者 clear
+
+打开命令手册
+1man rm
+
+查看某个参数，比如查看-r参数
+1/-r
+
+退出用户手册
+1q
+
+查看当前所在目录
+1pwd
+
+敲tab，自动补齐，两次tab，查看备选
+拷贝
+12cp file1">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="学习linux使用"/>
+  <meta property="og:site_name" content="Home"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Home</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="所有文章归档">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="所有文章分类">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="关于我">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> 学习linux使用</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <h1 id="Linux_Guide_for_Developer">Linux Guide for Developer</h1>
+<hr>
+<p>清屏命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctrl + l 或者 clear</div></pre></td></tr></table></figure>
+
+<p>打开命令手册</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">man rm</div></pre></td></tr></table></figure>
+
+<p>查看某个参数，比如查看-r参数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/-r</div></pre></td></tr></table></figure>
+
+<p>退出用户手册</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">q</div></pre></td></tr></table></figure>
+
+<p>查看当前所在目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">pwd</span></div></pre></td></tr></table></figure>
+
+<p>敲tab，自动补齐，两次tab，查看备选</p>
+<p>拷贝</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cp file1 file2</div><div class="line">cp -r dir1 dir2</div></pre></td></tr></table></figure>
+
+<p>移动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mv file ..</div><div class="line">mv file dir/</div></pre></td></tr></table></figure>
+
+<p>重命名</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mv file1 file2</div><div class="line">mv dir1 dir2 <span class="comment"># dir2 存在，则为移动操作</span></div></pre></td></tr></table></figure>
+
+<p>删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rm file</div><div class="line">rm -r dir</div></pre></td></tr></table></figure>
+
+<p>创建文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch a.txt</div></pre></td></tr></table></figure>
+
+<p>创建目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir dir</div></pre></td></tr></table></figure>
+
+<p>创建一个隐藏的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch .aa <span class="comment">#以.开头的文件是隐藏的</span></div></pre></td></tr></table></figure>
+
+<p>创建一个隐藏的目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir .a <span class="comment">#以.开头的目录是隐藏的</span></div></pre></td></tr></table></figure>
+
+<p>列出隐藏的文件或目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls <span class="operator">-a</span></div></pre></td></tr></table></figure>
+
+<p>多个文件一起删</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm dir1 dir2 -r</div></pre></td></tr></table></figure>
+
+<p>删除所有</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -rf *</div></pre></td></tr></table></figure>
+
+<p>查看文件类型</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">file index.html</div></pre></td></tr></table></figure>
+
+<p>查看文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">less index.html <span class="comment">#可用ctrl--减小字体,用ctrl++放大字体，敲j可以向下滚屏，敲k可以向上滚屏，/可以进行字符查找，敲两下g，到文件头，敲G到文件尾，q退出</span></div></pre></td></tr></table></figure>
+
+<p>打印</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> a* <span class="comment">#打印a开头的文件或文件夹</span></div></pre></td></tr></table></figure>
+
+<p>解压zip</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">unzip master.zip</div></pre></td></tr></table></figure>
+
+<p>压缩成zip</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">zip -r master.zip happygrep-master</div></pre></td></tr></table></figure>
+
+<p>解压tar.gz</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar zxvf wget-<span class="number">1.11</span>.<span class="number">1</span>.tar.gz</div></pre></td></tr></table></figure>
+
+<p>压缩成tar.gz</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar zcvf wget-<span class="number">1.1</span>.<span class="number">11.1</span>.tar.gz wget-<span class="number">1.1</span>.<span class="number">11.1</span></div></pre></td></tr></table></figure>
+
+<p>解压tar.bz2</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar jxvf aa.tar.bz2</div></pre></td></tr></table></figure>
+
+<p>压缩tar.bz2</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar jcvf a.tar.bz2 a</div></pre></td></tr></table></figure>
+
+<h3 id="Everything_is_a_file">Everything is a file</h3>
+<h3 id="重定向">重定向</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cat file1 &gt; file <span class="comment">#将file1里的内容输出到file里</span></div><div class="line"><span class="comment">#&gt;每次重定向都会先清空</span></div><div class="line"><span class="comment">#要想不清空，则可以为&gt;&gt;</span></div><div class="line">cat file2 &gt;&gt; file</div></pre></td></tr></table></figure>
+
+<p>打印两个文件的和</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat file1 file2</div><div class="line">cat file1 file2 &gt; file</div></pre></td></tr></table></figure>
+
+<h3 id="错误标准输出">错误标准输出</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ls shit <span class="number">2</span>&gt; out.txt</div><div class="line">cat out.txt</div></pre></td></tr></table></figure>
+
+<p>重定向标准输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cowsay &lt; out.txt</div></pre></td></tr></table></figure>
+
+<p>管道</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cat files.txt|uniq</div><div class="line">cat files.txt|uniq|grep txt</div><div class="line">cat files.txt|uniq|grep txt|sort</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls <span class="operator">-l</span> a.txt</div></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>符合</th>
+<th style="text-align:right">意思</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td style="text-align:right">file</td>
+</tr>
+<tr>
+<td>l</td>
+<td style="text-align:right">sym link</td>
+</tr>
+<tr>
+<td>d</td>
+<td style="text-align:right">directory</td>
+</tr>
+</tbody>
+</table>
+<p>rw-(owner)rw-(group)r—(world)</p>
+<h3 id="加权限">加权限</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chmod +w .</div><div class="line">chomd +x a.sh</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ps aux|less <span class="comment">#查看所有进程</span></div><div class="line">ps aux|grep vim <span class="comment">#查找vim进程</span></div><div class="line">kill pid <span class="comment">#杀进程</span></div></pre></td></tr></table></figure>
+
+<h3 id="后台执行">后台执行</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">firefox &</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">firefox</div><div class="line">ctrl + Z</div><div class="line">bg <span class="comment">#后台</span></div><div class="line">fg <span class="comment">#前台运行</span></div></pre></td></tr></table></figure>
+
+<h3 id="查找">查找</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">locate <span class="comment">#在系统全局范围内定位文件</span></div><div class="line">find <span class="comment">#一个目录范围内定位文件</span></div><div class="line">grep <span class="comment">#</span></div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">locate vimrc</div><div class="line">find .|grep .txt</div><div class="line">find . -type f</div><div class="line">find . -type d</div></pre></td></tr></table></figure>
+
+<p>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rsync -r mydir happcasts.net:</div></pre></td></tr></table></figure>
+
+<h3 id="软件安装">软件安装</h3>
+<ul>
+<li>手动安装</li>
+<li>deb包</li>
+<li>从apt-get仓库安装</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln <span class="operator">-s</span> ~/.sublime/sublime_text ~/bin/subl</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">源码安装步骤</div><div class="line">./configure</div><div class="line">make</div><div class="line"><span class="built_in">sudo</span> make install <span class="comment">##三步</span></div></pre></td></tr></table></figure>
+
+<p>deb包包括<br><strong>程序本身</strong> <strong>配置文件</strong> <strong>安装位置</strong> <strong>依赖关系</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> dpkg -i google-chrome-stable_current_i386.deb</div><div class="line">dpkg <span class="operator">-l</span> <span class="comment">#查看机器上安装的所有deb包</span></div><div class="line">dpkg <span class="operator">-l</span>|grep chrome</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">安装<span class="built_in">sudo</span> apt-get install git</div><div class="line">卸载<span class="built_in">sudo</span> apt-get remove git</div><div class="line">或suod apt-get purge git</div></pre></td></tr></table></figure>
+
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2015/02/25/learn-php/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	3月 1 2015 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2015 sibeta
+  
+      with help from <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+   </html>
